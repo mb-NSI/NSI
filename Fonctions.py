@@ -78,3 +78,7 @@ def trier(t):
             i=i-1
         t[i+1]= T
     return t
+
+def insertion_sort_in_place(t):
+    for i in range(1,len(t)):
+        insert(t,i)
