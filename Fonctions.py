@@ -111,7 +111,7 @@ def insertion_sort_in_place(t):
     for i in range(1,len(t)):
         insert(t,i)
 
-def test_insertion_sort_in_place(t):
+def test_insertion_sort_in_place():
     t=[1,4,8,2,3,7,9,15,1]
     res=[1,1,2,3,4,7,8,9,15]
     insertion_sort_in_place(t)
