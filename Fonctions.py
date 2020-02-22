@@ -91,6 +91,15 @@ def selection_sort_in_place(t):
             swap(t,i,s)
     return None
 
+
+def test_insert_sort_in_place(t):
+    t=[1,4,8,2,3,7,9,15,1]
+    res=[1,1,2,3,4,7,8,9,15]
+   test_insert_sort_in_place(t)
+   return res==t
+
+
+
 def insert(t,i):
     for current_index in range(i-1,-1,-1):
         if t[current_index] > t[current_index+1]:
