@@ -79,6 +79,25 @@ def trier(t):
         t[i+1]= T
     return t
 
+def test_trier():
+    t=[1,4,8,2,3,7,9,15,1]
+    return belong(9,t) and not belong(5,t)
+    print("test_belong "+str(test_belong()))
+
+def selection_sort_in_place(t):
+    for i in range (len(t)):
+        s=index_of_the_smallest(t,i,len(t)-1)
+        if s>i:
+            swap(t,i,s)
+    return None
+
+def insert(t,i):
+    for current_index in range(i-1,-1,-1):
+        if t[current_index] > t[current_index+1]:
+            swap(t,current_index,current_index+1)
+        else:
+            break
+
 def insertion_sort_in_place(t):
     for i in range(1,len(t)):
         insert(t,i)
