@@ -74,14 +74,12 @@ def test_my_selection_sort():
     return  my_selection_sort(t)==res
 
 
-def index_of_the_smallest(t,i,j):
-  i=0
-  j=1
-  for elements in t:
-      if t[i]<t[j]:
-          return i
-      else:
-          return j
+def index_of_the_smallest(t,index_min,index_max):
+  res=index_min
+  for index in range(index_min+1,index_max+1):
+      if T[index] < T[res]
+          res = index
+    return res
 
 def trier(t):
     for j in range(1, len(t)):
