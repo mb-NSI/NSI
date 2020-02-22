@@ -92,13 +92,6 @@ def selection_sort_in_place(t):
     return None
 
 
-def test_insert_sort_in_place(t):
-    t=[1,4,8,2,3,7,9,15,1]
-    res=[1,1,2,3,4,7,8,9,15]
-   test_insert_sort_in_place(t)
-   return res==t
-
-
 
 def insert(t,i):
     for current_index in range(i-1,-1,-1):
@@ -110,3 +103,10 @@ def insert(t,i):
 def insertion_sort_in_place(t):
     for i in range(1,len(t)):
         insert(t,i)
+
+
+def test_insert_sort_in_place(t):
+    t=[1,4,8,2,3,7,9,15,1]
+    res=[1,1,2,3,4,7,8,9,15]
+   test_insert_sort_in_place(t)
+   return res==t
