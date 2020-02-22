@@ -60,6 +60,13 @@ def my_selection_sort(t):
         res=t[j]
         remove(t,j)
 
+
+def test_my_selection_sort():
+    t=[1,4,8,2,3,7,9,15,1]
+    res=[1,1,2,3,4,7,8,9,15]
+    return  my_selection_sort(t)==res
+
+
 def index_of_the_smallest(t,i,j):
   i=0
   j=1
@@ -91,11 +98,6 @@ def selection_sort_in_place(t):
             swap(t,i,s)
     return None
 
-
-def test_my_selection_sort():
-    t=[1,4,8,2,3,7,9,15,1]
-    res=[1,1,2,3,4,7,8,9,15]
-    return  my_selection_sort(t)==res
 
 
 def insert(t,i):
