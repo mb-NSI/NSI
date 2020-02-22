@@ -92,6 +92,11 @@ def selection_sort_in_place(t):
     return None
 
 
+def test_my_selection_sort():
+    t=[1,4,8,2,3,7,9,15,1]
+    res=[1,1,2,3,4,7,8,9,15]
+    return  my_selection_sort(t)==res
+
 
 def insert(t,i):
     for current_index in range(i-1,-1,-1):
