@@ -6,6 +6,12 @@ def belong(n,t):
         i=i+1
     return False
 
+def test_trier():
+    t=[1,4,8,2,3,7,9,15,1]
+    return belong(9,t) and not belong(5,t)
+    print("test_belong "+str(test_belong()))
+
+
 def my_sum(t):
     res=t[0]
     for i in range(len(t)):
