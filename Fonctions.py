@@ -9,8 +9,6 @@ def belong(n,t):
 def test_belong():
     t=[1,4,8,2,3,7,9,15,1]
     return belong(9,t) and not belong(5,t)
-    print("test_belong "+str(test_belong()))
-
 
 def my_sum(t):
     res=t[0]
