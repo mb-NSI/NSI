@@ -10,6 +10,9 @@ def test_belong():
     t=[1,4,8,2,3,7,9,15,1]
     return belong(9,t) and not belong(5,t)
 
+   
+ print("test_belong "+str(test_belong()))
+
 def my_sum(t):
     res=t[0]
     for i in range(len(t)):
@@ -119,5 +122,5 @@ def test_insertion_sort_in_place():
     t=[1,4,8,2,3,7,9,15,1]
     res=[1,1,2,3,4,7,8,9,15]
     insertion_sort_in_place(t)
-   return res==t
+    return res==t
 
